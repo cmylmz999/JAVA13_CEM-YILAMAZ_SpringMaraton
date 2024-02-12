@@ -1,0 +1,24 @@
+ext{
+    versions=[
+            springBoot:     "3.2.2",
+            lombok:         "1.18.30",
+            openApi:        "2.3.0",
+            mapStruct:      "1.5.5.Final",
+            h2DB:           "2.1.214",
+            hibernate:      "5.6.14.Final"
+    ]
+
+    libs =[
+
+            springBootWeb:                  "org.springframework.boot:spring-boot-starter-web:${versions.springBoot}",
+            springBootJpa:                  "org.springframework.boot:spring-boot-starter-data-jpa:${versions.springBoot}",
+            springBootValidation:           "org.springframework.boot:spring-boot-starter-validation:${versions.springBoot}",
+            lombok:                         "org.projectlombok:lombok:${versions.lombok}",
+            openApi:                        "org.springdoc:springdoc-openapi-starter-webmvc-ui:${versions.openApi}",
+            mapStruct:                      "org.mapstruct:mapstruct:${versions.mapStruct}",
+            mapStructProcessor:             "org.mapstruct:mapstruct-processor:${versions.mapStruct}",
+            h2DB:                           "com.h2database:h2:${versions.h2DB}",
+
+    ]
+
+}
